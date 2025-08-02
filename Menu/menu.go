@@ -1,6 +1,8 @@
 package menu
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func PrintMenu() {
 	fmt.Println("1.help")

@@ -1,14 +1,9 @@
 package main
 
 import (
-	"fmt"
-	controller "project/Conroller"
-	menu "project/Menu"
+	controller "project/Controller"
 )
 
 func main() {
-	menu.PrintMenu()
-	var c string
-	fmt.Scanln(&c)
-	controller.Control(c)
+	controller.Home()
 }
