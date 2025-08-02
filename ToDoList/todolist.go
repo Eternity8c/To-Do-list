@@ -19,6 +19,7 @@ func (tl *ToDoList) SaveToFile(filename string) error {
 	return os.WriteFile(filename, data, 0644)
 }
 
+// Выводит информацию о меню
 func Help() {
 	fmt.Println("- add  - эта команда позволяет добавлять новые задачи в список задач")
 	fmt.Println("- list - эта команда позволяет получить полный список всех задач")
