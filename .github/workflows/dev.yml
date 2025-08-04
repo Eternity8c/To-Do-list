@@ -10,7 +10,6 @@ jobs:
   lint:
     name: lint
     runs-on: ubuntu-latest
-    if: false 
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v4
@@ -32,4 +31,4 @@ jobs:
       - name: Download modules
         run: go mod download
       - name: Build app
-        run: go build -v -o test ./main.go
+        run: go build -v -o test .
